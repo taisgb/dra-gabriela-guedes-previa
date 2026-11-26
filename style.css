@@ -733,8 +733,8 @@ main>.hero-shell .hero{padding-bottom:0;align-items:end}
 .hero-shell .hero-copy{align-self:center;padding-bottom:clamp(62px,6vw,92px)}
 .hero-shell .hero-art{position:relative;display:block;align-self:end;isolation:isolate;width:100%;max-width:470px;min-height:0;padding:0;margin:0 auto}
 .hero-shell .hero-art .shape-back{inset:7% 0 0;transform:none;border-radius:48% 48% 0 0 / 39% 39% 0 0;background:linear-gradient(145deg,#DCEAF1,#95B3C3);box-shadow:none;opacity:1;z-index:-1}
-.hero-shell .portrait{position:relative;width:100%;max-width:none;aspect-ratio:1/1.04;min-height:0;max-height:none;margin:0;display:block;overflow:hidden;background:transparent;border-radius:48% 48% 0 0 / 38% 38% 0 0;box-shadow:none;z-index:1}
-.hero-shell .portrait img{position:absolute;display:block;width:128%;max-width:none;height:auto;max-height:none;top:0;left:50%;transform:translateX(-50%);object-fit:contain;object-position:center top;border-radius:0;margin:0}
+.hero-shell .portrait{position:relative;width:100%;max-width:none;aspect-ratio:1/1.32;min-height:0;max-height:none;margin:0;display:block;overflow:hidden;background:transparent;border-radius:48% 48% 0 0 / 38% 38% 0 0;box-shadow:none;z-index:1}
+.hero-shell .portrait img{position:absolute;display:block;width:124%;max-width:none;height:auto;max-height:none;top:0;left:50%;transform:translateX(-50%);object-fit:contain;object-position:center top;border-radius:0;margin:0}
 .hero-shell .portrait img[hidden]{display:none}
 .hero-shell .portrait-fallback{min-height:260px}
 .hero-shell .portrait img:not([hidden])+.portrait-fallback{display:none}
@@ -744,10 +744,12 @@ main>.hero-shell .hero{padding-bottom:0;align-items:end}
   main>.hero-shell .hero{padding-bottom:0;gap:22px;align-items:end}
   .hero-shell .hero-copy{padding-bottom:0}
   .hero-shell .hero-art{max-width:380px;padding:0}
+  .hero-shell .portrait{aspect-ratio:1/1.29}
   .hero-shell .hero-wave{height:34px}
 }
 @media(max-width:480px){
   .hero-shell .hero-art{max-width:330px;padding:0}
+  .hero-shell .portrait{aspect-ratio:1/1.29}
   .hero-shell .hero-wave{height:28px}
 }
 
