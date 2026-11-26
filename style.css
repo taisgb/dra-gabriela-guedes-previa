@@ -726,3 +726,26 @@ main>.stages,main>.process,main>.review,main>.final-cta,main>.about,main>.clinic
 @media(max-width:1100px){.stage-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stage-grid .stage:first-child,.stage-grid .stage:nth-child(4){grid-row:auto;grid-column:auto}}
 @media(max-width:800px){.stage-grid .stage:first-child,.stage-grid .stage:not(:first-child){min-height:0}.unit-grid .unit-card{padding:22px}.unit-grid .unit-card iframe{height:210px}.footer-content{gap:24px}}
 @media(max-width:480px){.stage-grid{grid-template-columns:1fr}.stage-grid .stage{padding:28px 20px 23px}.unit-grid .unit-card{padding:19px}.unit-grid .unit-card .unit-book{width:100%}.unit-grid .unit-card iframe{height:190px}.footer-content .brand{font-size:16px}}
+
+/* Hero V13.1 — retrato apoiado na base da seção, sem recorte flutuante. */
+main>.hero-shell .hero{padding-bottom:0;align-items:end}
+.hero-shell .hero-copy{align-self:center;padding-bottom:clamp(64px,6vw,96px)}
+.hero-shell .hero-art{position:relative;display:flex;align-items:flex-end;justify-content:center;align-self:end;max-width:500px;min-height:0;padding:0 12px;margin:0 auto}
+.hero-shell .hero-art .shape-back{inset:9% 0 0;transform:none;border-radius:50% 50% 0 0 / 43% 43% 0 0;background:linear-gradient(145deg,#DCEAF1,#95B3C3);box-shadow:none;opacity:1}
+.hero-shell .portrait{position:relative;width:100%;max-width:470px;aspect-ratio:auto;min-height:0;max-height:none;margin:0 auto;display:block;overflow:visible;background:transparent;border-radius:0;box-shadow:none;z-index:1}
+.hero-shell .portrait img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center bottom;border-radius:0;margin:0}
+.hero-shell .portrait img[hidden]{display:none}
+.hero-shell .portrait-fallback{min-height:260px}
+.hero-shell .portrait img:not([hidden])+.portrait-fallback{display:none}
+.hero-shell .portrait-label{display:none}
+.hero-shell .hero-wave{position:absolute;left:0;bottom:-1px;width:100%;height:clamp(35px,4.5vw,65px);z-index:3;pointer-events:none;color:#fff}
+@media(max-width:800px){
+  main>.hero-shell .hero{padding-bottom:0;gap:24px;align-items:end}
+  .hero-shell .hero-copy{padding-bottom:0}
+  .hero-shell .hero-art{max-width:390px;padding-inline:10px}
+  .hero-shell .hero-wave{height:34px}
+}
+@media(max-width:480px){
+  .hero-shell .hero-art{max-width:345px;padding-inline:6px}
+  .hero-shell .hero-wave{height:28px}
+}
