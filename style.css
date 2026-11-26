@@ -43,7 +43,7 @@
 .hero-shell .hero-label{padding:8px 16px;border-radius:99px;background:var(--brand-turquoise);color:#233f65;font-size:13px;letter-spacing:0;text-transform:none;gap:8px}
 .hero-label svg,.hero-location svg{width:17px;height:17px;flex:none}
 .hero-shell h1{font-family:var(--allo);font-variation-settings:'ROND' 72;font-weight:750;font-size:clamp(3rem,4.9vw,4.75rem);line-height:1.04;letter-spacing:-.06em;margin:21px 0 18px;color:var(--rose);max-width:690px}
-.hero-shell h1 span{color:inherit;display:block;text-decoration:underline;text-decoration-color:var(--brand-yellow);text-decoration-thickness:.09em;text-underline-offset:.12em;text-decoration-skip-ink:auto}
+.hero-shell h1 span{color:inherit;display:block;text-decoration:underline;text-decoration-color:#7197AC;text-decoration-thickness:.09em;text-underline-offset:.12em;text-decoration-skip-ink:auto}
 .hero-shell .hero-copy>p{font-size:clamp(1rem,1.4vw,1.125rem);line-height:1.55;max-width:540px;margin:0 0 22px;color:var(--ink)}
 .hero-credentials{display:grid;gap:3px;border-left:4px solid var(--brand-turquoise);padding-left:13px;color:var(--rose);font-size:14px;line-height:1.45;margin-bottom:23px}
 .hero-credentials strong{font-size:15px}.hero-credentials span{color:var(--ink)}
